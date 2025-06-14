@@ -8,15 +8,15 @@ import {ComponentPropsWithoutRef, useEffect, useRef, useState} from "react";
 const tabs = [
     {
         icon: "/assets/lottie/vroom.lottie",
-        title: "User-friendly dashboard",
-        isNew: false,
+        title: "Automatizaciones Inteligentes",
+        isNew: true,
         backgroundPositionX: 0,
         backgroundPositionY: 0,
         backgroundSizeX: 150,
     },
     {
         icon: "/assets/lottie/click.lottie",
-        title: "One-click optimization",
+        title: "Integraciones Perfectas",
         isNew: false,
         backgroundPositionX: 98,
         backgroundPositionY: 100,
@@ -24,8 +24,8 @@ const tabs = [
     },
     {
         icon: "/assets/lottie/stars.lottie",
-        title: "Smart keyword generator",
-        isNew: true,
+        title: "Soporte Continuo",
+        isNew: false,
         backgroundPositionX: 100,
         backgroundPositionY: 27,
         backgroundSizeX: 177,
@@ -90,7 +90,7 @@ const FeatureTab = (
                 <motion.div
                     style={{maskImage}}
                     className={
-                        "absolute inset-0 -m-px border border-[#A369FF] rounded-xl"
+                        "absolute inset-0 -m-px border border-synergy-blue rounded-xl"
                     }
                 />
             )}
@@ -105,8 +105,8 @@ const FeatureTab = (
             </div>
             <div className={"font-medium"}>{props.title}</div>
             {props.isNew && (
-                <div className={"text-xs rounded-full text-white px-2 py-0.5 bg-[#8c44ff] font-semibold"}>
-                    New
+                <div className={"text-xs rounded-full text-white px-2 py-0.5 bg-gradient-to-r from-synergy-blue to-synergy-purple font-semibold"}>
+                    Nuevo
                 </div>
             )}
         </div>
@@ -152,11 +152,10 @@ export function Features() {
             <section className={"py-20 md:py-24"}>
                 <div className={"container"}>
                     <h2 className={"text-5xl md:text-6xl font-medium text-center tracking-tighter"}>
-                        Elevate your SEO efforts.
+                        Automatizaciones que Transforman
                     </h2>
                     <p className={"text-white/70 text-lg md:text-xl max-w-2xl mx-auto text-center tracking-tight mt-5"}>
-                        From small startups to large enterprises, our AI-driven tool has
-                        revolutionized the way businesses approach SEO.
+                        Desde chatbots inteligentes hasta integraciones complejas, nuestras soluciones están diseñadas para PYMEs que quieren crecer sin complicaciones.
                     </p>
 
                     <div className={"mt-10 grid lg:grid-cols-3 gap-3"}>

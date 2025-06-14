@@ -44,19 +44,19 @@ export function CallToAction() {
                         transition={{duration: 120, repeat: Infinity, ease: 'linear'}}
                         className={"border border-muted py-24 px-6 rounded-xl overflow-hidden relative group"}
                         style={{backgroundImage: `url(${BackgroundStars.src})`, backgroundPositionY}}>
-                        <div className={"absolute inset-0 bg-[rgb(74,32,138)] bg-blend-overlay [mask-image:radial-gradient(50%_50%_at_50%_35%,black,transparent)] group-hover:opacity-0 transition duration-700"} style={{backgroundImage: `url(${BackgroundGrid.src})`}}/>
+                        <div className={"absolute inset-0 bg-[rgb(0,123,255)] bg-blend-overlay [mask-image:radial-gradient(50%_50%_at_50%_35%,black,transparent)] group-hover:opacity-0 transition duration-700"} style={{backgroundImage: `url(${BackgroundGrid.src})`}}/>
                         <motion.div
-                            className={"absolute inset-0 bg-[rgb(74,32,138)] bg-blend-overlay opacity-0 group-hover:opacity-100 transition duration-700"}
+                            className={"absolute inset-0 bg-[rgb(0,123,255)] bg-blend-overlay opacity-0 group-hover:opacity-100 transition duration-700"}
                             style={{backgroundImage: `url(${BackgroundGrid.src})`, maskImage: maskImage}} ref={borderedDivRef}/>
                         <div className={"relative"}>
                             <h2 className={"text-5xl tracking-tighter text-center font-medium"}>
-                                AI-driven SEO for everyone
+                                ¿Listo para Automatizar tu PYME?
                             </h2>
                             <p className={"text-center text-lg md:text-xl text-white/70 tracking-tight px-4 mt-5"}>
-                                Achieve clear, impactful results without the complexity.
+                                Agenda una consulta gratuita y descubre cómo podemos transformar tu negocio en 30 días.
                             </p>
                             <div className={"flex justify-center mt-8"}>
-                                <ActionButton label={"Join Waitlist for Early Access"}/>
+                                <ActionButton label={"Agendar Consulta Gratuita"}/>
                             </div>
                         </div>
                     </motion.div>

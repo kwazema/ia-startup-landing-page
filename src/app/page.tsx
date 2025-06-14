@@ -5,7 +5,10 @@ import SiteFooter from "@/components/site-footer";
 import {CallToAction} from "@/components/call-to-action";
 import { Features } from "@/components/features";
 import { Testimonials } from "@/components/testimonials";
-import {GithubIndicator} from "@/components/github-indicator";
+import { Services } from "@/components/services";
+import { Team } from "@/components/team";
+import { FAQ } from "@/components/faq";
+import { ContactForm } from "@/components/contact-form";
 
 export default function Home() {
     return (
@@ -13,10 +16,13 @@ export default function Home() {
             <SiteHeader />
             <HeroSection />
             <LogoTicker />
+            <Services />
             <Features />
             <Testimonials />
+            <Team />
+            <FAQ />
+            <ContactForm />
             <CallToAction />
-            <GithubIndicator />
             <SiteFooter />
         </>
     );

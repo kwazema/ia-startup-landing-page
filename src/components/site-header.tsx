@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import SiteLogo from "@/assets/logo.svg"
-import {CodeXml, Feather, MenuIcon, Newspaper, Wallet2} from "lucide-react";
+import {Settings, Users, HelpCircle, MessageSquare, MenuIcon} from "lucide-react";
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet"
 import {useState} from "react";
 import {ActionButton} from "@/components/action-button";
@@ -21,14 +21,14 @@ export default function SiteHeader() {
                         </Link>
                         <section className={"max-md:hidden"}>
                             <nav className={"flex gap-8 items-center text-sm"}>
-                                <Link href={"#"} className={"text-white/70 hover:text-white transition"}>Features</Link>
-                                <Link href={"#"} className={"text-white/70 hover:text-white transition"}>Developers</Link>
-                                <Link href={"#"} className={"text-white/70 hover:text-white transition"}>Pricing</Link>
-                                <Link href={"#"} className={"text-white/70 hover:text-white transition"}>Changelog</Link>
+                                <Link href={"#servicios"} className={"text-white/70 hover:text-white transition"}>Servicios</Link>
+                                <Link href={"#nosotros"} className={"text-white/70 hover:text-white transition"}>Nosotros</Link>
+                                <Link href={"#faq"} className={"text-white/70 hover:text-white transition"}>FAQ</Link>
+                                <Link href={"#contacto"} className={"text-white/70 hover:text-white transition"}>Contacto</Link>
                             </nav>
                         </section>
                         <section className={"flex max-md:gap-4 items-center"}>
-                            <ActionButton label={"Join Waitlist"} />
+                            <ActionButton label={"Consulta Gratuita"} />
                             <Sheet open={isOpen} onOpenChange={setIsOpen}>
                                 <SheetTrigger>
                                     <MenuIcon className={"size-9 md:hidden hover:text-white/70 transition"}/>
@@ -38,25 +38,25 @@ export default function SiteHeader() {
                                         <div className={"border size-8 rounded-lg inline-flex items-center justify-center"}>
                                             <SiteLogo className={"size-6 h-auto"}/>
                                         </div>
-                                        <p className={"font-bold"}>AI Startup Landing Page</p>
+                                        <p className={"font-bold"}>SynergyLabs</p>
                                     </div>
                                     <div className={"mt-8 mb-4"}>
                                         <nav className={"grid gap-4 items-center text-lg"}>
-                                            <Link href={"#"} className={"flex items-center gap-3 text-white/70 hover:text-white transition"}>
-                                                <Feather className={"size-6"} />
-                                                Features
+                                            <Link href={"#servicios"} className={"flex items-center gap-3 text-white/70 hover:text-white transition"}>
+                                                <Settings className={"size-6"} />
+                                                Servicios
                                             </Link>
-                                            <Link href={"#"} className={"flex items-center gap-3 text-white/70 hover:text-white transition"}>
-                                                <CodeXml className={"size-6"} />
-                                                Developers
+                                            <Link href={"#nosotros"} className={"flex items-center gap-3 text-white/70 hover:text-white transition"}>
+                                                <Users className={"size-6"} />
+                                                Nosotros
                                             </Link>
-                                            <Link href={"#"} className={"flex items-center gap-3 text-white/70 hover:text-white transition"}>
-                                                <Wallet2 className={"size-6"} />
-                                                Pricing
+                                            <Link href={"#faq"} className={"flex items-center gap-3 text-white/70 hover:text-white transition"}>
+                                                <HelpCircle className={"size-6"} />
+                                                FAQ
                                             </Link>
-                                            <Link href={"#"} className={"flex items-center gap-3 text-white/70 hover:text-white transition"}>
-                                                <Newspaper className={"size-6"} />
-                                                Changelog
+                                            <Link href={"#contacto"} className={"flex items-center gap-3 text-white/70 hover:text-white transition"}>
+                                                <MessageSquare className={"size-6"} />
+                                                Contacto
                                             </Link>
                                         </nav>
                                     </div>

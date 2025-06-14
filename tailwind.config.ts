@@ -32,6 +32,13 @@ const config = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        // SynergyLabs Brand Colors
+        synergy: {
+          blue: "#007BFF",
+          purple: "#8B5CF6",
+          "gradient-start": "#007BFF",
+          "gradient-end": "#8B5CF6",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
